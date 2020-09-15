@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & HTML & CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wraper">
+        <h1>Grachev Roman</h1>
+        <hr>
+        <h2>Contacts</h2>
+        <header>
+            <div>
+                <ul>
+                    <li>phone: +7906 8970429</li>
+                    <li>telegram: @GrachevRV </li>
+                    <li>discord: Roman_Gr#6347</li>
+                    <li>e-mail: grachevrv@ya.ru</li>
+                </ul>
+
+            </div>
+            <div>
+                <img src="/Грачев Роман квадрат.jpg" alt="Grachev R V">
+            </div>
+        </header>
+        <hr>
+        <h2>Info</h2>
+        <p>I am 46 years old, 26 of them are businessman. I can teach and learn </p>
+        <hr>
+        <h2>Skills</h2>
+        <p>HTML, CSS, JS, VUE, NODE, MONGODB, Firebase, GIT. Visual Studio Code.</p>
+        <hr>
+        <h2>Code examples</h2>
+        <pre>
+            <code>
+    &lt;div class=&quot;md-layout md-alignment-center-center&quot;&gt;
+      &lt;md-content class=&quot;md-layout-item md-size-60 md-small-size-100&quot;&gt;
+        &lt;md-progress-bar md-mode=&quot;indeterminate&quot; v-if=&quot;loading&quot; /&gt;
+        &lt;div
+          class=&quot;md-layout-item &quot;
+        &gt;
+          &lt;div v-if=&quot;SELECTED_CATEGORIES&quot; 
+          class=&quot;md-layout-item&quot;&gt;{{CATEGORIES.toUpperCase()}}:&lt;/div&gt;
+          &lt;div class=&quot;md-layout-item subcategory&quot;&gt;
+            &lt;md-chip
+              md-clickable
+              v-for=&quot;(subcategory,index) in SUBCATEGORY&quot;
+              :key=&quot;index&quot;
+              @click=&quot;toShowcase(subcategory)&quot;
+            &gt;{{subcategory}}&lt;/md-chip&gt;
+            &lt;md-button
+              v-if=&quot;IS_SUBCATEGORY_SELECT&quot;
+              class=&quot;md-icon-button md-accent md-dense&quot;
+              @click=&quot;delSubcategory&quot;
+            &gt;
+              &lt;md-icon&gt;
+                &lt;font-awesome-icon icon=&quot;times&quot; /&gt;
+              &lt;/md-icon&gt;
+            &lt;/md-button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;md-layout&quot;&gt;          
+          &lt;ProductCard
+            v-for=&quot;(product, index) in SORTED_PRODUCTS&quot;
+            :key=&quot;index&quot;
+            :product_data=&quot;product&quot;
+          /&gt;
+        &lt;/div&gt;
+      &lt;/md-content&gt;
+    &lt;/div&gt;
+          
+            </code>
+        </pre>
+        <hr>
+        <h2>Experience</h2>
+
+        <p>Teacher of "Web development" at the <a href="https://vk.com/qbitclub"> Qbit club Glazov</a> </p>
+        <p>Git: <a href="http://grif-qbit.duckdns.org:10080/grachevrv">http://grif-qbit.duckdns.org:10080/grachevrv</a>
+        </p>
+        <hr>
+        <h2>Education</h2>
+        <h3>University:</h3>
+        <ul>
+            <li>1991 -1996 - economist</li>
+            <li>1998- 2001 - lawyer</li>
+        </ul>
+        <h3>Сourses:</h3>
+        <ul>
+            <li>2017 - Сoursera: "Introduction to swift"</li>
+            <li>2018 - Codery (React, Express, Node, AWS)</li>
+            <li>2019 - Udemy (NodeJS)</li>
+            <li>2019 - Udemy (Introduction to HTML, CSS)</li>
+        </ul>
+        <hr>
+        <h2>English level</h2>
+        <p>pre-intermediate</p>
+
+    </div>
+
+</body>
+
+</html>
