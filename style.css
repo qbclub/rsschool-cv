@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: rgb(250, 250, 250);
+    font-size: 1.2em;
+}
+
+.wraper {
+
+    width: 50%;
+
+}
+
+@media (max-width: 767px) {
+    .wraper {
+        width: 100%;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+div img {
+    width: 200px;
+    margin: 10 20 0 0;
+}
+
+code {
+    font-size: 0.7em;
+}
