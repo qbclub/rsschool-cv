@@ -10,15 +10,18 @@ body {
     text-align: center;
     color: #FFFFFF;
     margin-top: 0px;
+    background: #E5E5E5;
 }
 
 .wrapper {
     width: 1600px;
+    display: flex;
+    flex-direction: column;
 }
 
 #first_screen {
 
-    height: 688px;
+    height: 744px;
     /* background: blue; */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/rsschool-cv/webdev//assets/images/background.png");
     /* background: url("/rsschool-cv/webdev//assets/images/background.png") */
@@ -110,17 +113,75 @@ main {
 
     background: #00AFDB;
 }
+
 .socials {
     widows: 170px;
     margin-top: 183px;
- 
+
 }
-.socials img:hover{
+
+.socials img:hover {
     opacity: 0.5;
 }
-.socials img{
-    margin:0px 15px 0px 15px;
+
+.socials img {
+    margin: 0px 15px 0px 15px;
 }
+
+#rappresent {
+    height: 842px;
+    background: #FFFFFF;
+    color: black;
+    display: flex;
+    /* flex-direction: row; */
+
+}
+
+.rappresent_content {
+    height: 100%;
+    width: 50%;
+    text-align: left;
+
+}
+
+.rappresent_content img {
+    margin-top: 120px;
+    margin-left: 124px;
+}
+
+.text_content {
+    width: 407px;
+    height: 233px;
+    margin-top: 295px;
+    margin-left: 269px;
+  
+}
+
+.rappresent_content h2 {
+
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.13px;
+    letter-spacing: 1px;
+    text-align: left;
+
+}
+.rappresent_content p{
+   
+   
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+
+}
+
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
