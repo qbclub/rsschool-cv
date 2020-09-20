@@ -1,1 +1,133 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0px;
+}
 
+.wrapper {
+    width: 1600px;
+}
+
+#first_screen {
+
+    height: 688px;
+    /* background: blue; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/rsschool-cv/webdev//assets/images/background.png");
+    /* background: url("/rsschool-cv/webdev//assets/images/background.png") */
+}
+
+header {
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header h1 {
+    position: absolute;
+    left: 150px;
+    top: 5px;
+}
+
+.top_menu {
+    height: 100%;
+    width: 140px;
+    line-height: 95px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.top_menu:hover {
+    opacity: 1;
+}
+
+.active {
+    text-decoration: underline;
+    opacity: 1;
+
+}
+
+.top_menu img {
+    margin-top: 25px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.main_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 135px;
+
+}
+
+.subtext {
+    font-size: 18px;
+    /* line-height: 140%; */
+    /* or 25px */
+    text-align: center;
+    width: 504px;
+    height: 50px;
+    margin-top: 20px;
+
+
+    color: #FFFFFF;
+}
+
+.started_button {
+    margin-top: 30px;
+}
+
+.started_button button {
+
+    width: 184px;
+    height: 46px;
+    color: #FFFFFF;
+    border: none;
+
+    background: #00AFDB;
+}
+.socials {
+    widows: 170px;
+    margin-top: 183px;
+ 
+}
+.socials img:hover{
+    opacity: 0.5;
+}
+.socials img{
+    margin:0px 15px 0px 15px;
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('./assets/fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+
+        url('./assets/fonts/roboto-v20-latin-regular.woff') format('woff');
+
+}
