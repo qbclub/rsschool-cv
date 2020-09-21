@@ -265,7 +265,12 @@ p {
 
 }
 .arrow{
-    margin:0 10px 0 10px;
+        margin:0 10px 0 10px;
+    
+}
+.arrow:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 #sign_up {
