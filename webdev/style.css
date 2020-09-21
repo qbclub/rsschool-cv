@@ -6,7 +6,6 @@ body {
     font-weight: normal;
     font-size: 18px;
     line-height: 140%;
-    /* or 25px */
     text-align: center;
     color: #FFFFFF;
     margin-top: 0px;
@@ -22,9 +21,8 @@ body {
 #first_screen {
 
     height: 744px;
-    /* background: blue; */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/rsschool-cv/webdev//assets/images/background.png");
-    /* background: url("/rsschool-cv/webdev//assets/images/background.png") */
+  
 }
 
 header {
@@ -89,14 +87,10 @@ main {
 
 .subtext {
     font-size: 18px;
-    /* line-height: 140%; */
-    /* or 25px */
     text-align: center;
     width: 504px;
     height: 50px;
     margin-top: 20px;
-
-
     color: #FFFFFF;
 }
 
@@ -128,16 +122,18 @@ main {
     margin: 0px 15px 0px 15px;
 }
 
-#rappresent {
+#rappresent,
+#implement {
     height: 842px;
     background: #FFFFFF;
     color: black;
     display: flex;
-    /* flex-direction: row; */
+
 
 }
 
-.rappresent_content {
+.rappresent_content,
+.implement_content {
     height: 100%;
     width: 50%;
     text-align: left;
@@ -154,10 +150,10 @@ main {
     height: 233px;
     margin-top: 295px;
     margin-left: 269px;
-  
+
 }
 
-.rappresent_content h2 {
+h2 {
 
     font-family: Roboto;
     font-size: 24px;
@@ -168,9 +164,10 @@ main {
     text-align: left;
 
 }
-.rappresent_content p{
-   
-   
+
+.rappresent_content p,
+.implement_content p {
+
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -178,9 +175,82 @@ main {
     line-height: 19.6px;
     letter-spacing: 0px;
     text-align: left;
-    
 
 }
+
+.implement_text {
+    width: 407px;
+    height: 184px;
+    margin-top: 319px;
+    margin-left: 18px;
+
+}
+
+.implement_content img {
+    margin-top: 120px;
+    margin-left: 269px;
+}
+
+#community {
+    height: 504px;
+    background: #F5F6F7;
+}
+
+#sign_up {
+  
+    height: 524px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/images/emal_form.png);
+    background-position: 50% 80%;
+    display: flex;
+    justify-content: center;
+
+   
+}
+
+#download {
+
+    height: 464px;
+    background: #ffffff;
+}
+.sign_up_form{
+        margin-top: 180px;
+   
+    
+} 
+.sign_up_form h2{
+    text-align: center;
+}
+.email_form{
+    display: flex;      
+}
+#email{
+    width:340px;
+    height: 46px;
+    margin-top: 10px;
+    border: none;
+    padding: 0 0 0 10px;
+    display:block;
+}
+input::placeholder{
+    padding-left: 25px;
+    opacity:0.8;
+  
+}
+#submit{
+    background: #00AFDB;
+    border: none;
+    padding: 0;
+    margin-top: 10px;
+    width: 66px;
+    height: 46px;
+   
+}
+#footer {
+
+    height: 185px;
+    background: #000000;
+}
+
 
 @font-face {
     font-family: 'Roboto';
