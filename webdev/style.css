@@ -22,7 +22,7 @@ body {
 
     height: 744px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/rsschool-cv/webdev//assets/images/background.png");
-  
+
 }
 
 header {
@@ -53,6 +53,7 @@ header h1 {
 
 .top_menu:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .active {
@@ -165,9 +166,7 @@ h2 {
 
 }
 
-.rappresent_content p,
-.implement_content p {
-
+p {
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -194,61 +193,210 @@ h2 {
 #community {
     height: 504px;
     background: #F5F6F7;
+    display: flex;
+    position: relative;
+}
+
+.for_user_card {
+    width: 40%;
+    height: 100%;
+
+}
+
+.user_card {
+    width: 298px;
+    height: 175px;
+    margin-top: 155px;
+    margin-left: 269px;
+
+}
+
+.user_card p {
+    color: #4E4E4E;
+    text-align: center;
+}
+
+.user_card h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+
+    color: #373737;
+}
+
+.for_slider {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.for_slider img:first-child {
+    margin-left: 70px;
+}
+
+.for_slider img {
+    margin-right: 25px;
+    background-size: cover;
+    width: 407px;
+    height: 244px;
+
+}
+
+.pagination {
+    position: absolute;
+    top: 85px;
+    right: 270px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+   
+    color: #373737;;
+
+}
+.arrow{
+    margin:0 10px 0 10px;
 }
 
 #sign_up {
-  
+
     height: 524px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/images/emal_form.png);
     background-position: 50% 80%;
     display: flex;
     justify-content: center;
 
-   
+
+}
+
+
+.download {
+
+    margin-top: 100px;
+    width: 480px;
+
+}
+
+.download p,
+.download h2 {
+    text-align: center;
 }
 
 #download {
-
+    color: black;
+    display: flex;
+    justify-content: center;
     height: 464px;
     background: #ffffff;
+
 }
-.sign_up_form{
-        margin-top: 180px;
-   
-    
-} 
-.sign_up_form h2{
+
+.app_download {
+    background: #00AFDB;
+    border: none;
+    padding: 0;
+    margin: 18px 10px;
+    color: #FFFFFF;
+    width: 186px;
+    height: 46px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.sign_up_form {
+    margin-top: 180px;
+
+
+}
+
+.sign_up_form h2 {
     text-align: center;
 }
-.email_form{
-    display: flex;      
+
+.email_form {
+    display: flex;
 }
-#email{
-    width:340px;
+
+#email {
+    width: 340px;
     height: 46px;
     margin-top: 10px;
     border: none;
     padding: 0 0 0 10px;
-    display:block;
+    display: block;
 }
-input::placeholder{
+
+input::placeholder {
     padding-left: 25px;
-    opacity:0.8;
-  
+    opacity: 0.8;
+
 }
-#submit{
+
+#submit {
     background: #00AFDB;
     border: none;
     padding: 0;
     margin-top: 10px;
     width: 66px;
     height: 46px;
-   
+    cursor: pointer;
+
 }
+
+
+
 #footer {
 
     height: 185px;
     background: #000000;
+    display: flex;
+
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 28px 0 10px;
+    color: #FFFFFF;
+
+}
+
+li:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#footer:last-child {
+
+    font-size: 14px;
+    line-height: 140%;
+
+    text-align: center;
+
+    color: #818181;
+}
+
+#footer div {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
 }
 
 
