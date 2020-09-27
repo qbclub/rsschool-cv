@@ -4,6 +4,7 @@
     --color-dark-l: #545454;
     --color-dark-m: #B2B2B2;
     --color-light-l: #f6f6f6;
+    --color-light-xl: #ffffff;
 }
 
 @font-face {
@@ -38,6 +39,19 @@ h3 {
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--color-dark-l);
+}
+
+h4 {
+
+    font-family: Georgia;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: var(--color-dark-l);
+
 }
 
 h5 {
@@ -235,24 +249,42 @@ p {
 }
 
 .how_help {
-
     display: flex;
-    justify-content: center;
-    height: 611px;
+    align-items: center;
+    flex-direction: column;
+    height: 564px;
+    padding-top: 47px;
+    padding-left:2px;
 }
 
-.how_help h3 {
+.how_help_card_row1 {
+    width: 1147px;
+    padding-top: 23px;
+    display: flex;
+    justify-content: space-around;
+}
+.how_help_card_row2 {
+    width: 981px;
+    padding-top: 27px;
+    display: flex;
+    justify-content: space-around;
+}
+.how_help_card {
+    text-align:center;
+}
+
+.how_help h3, h4 {
     text-align: center;
-    margin-top: 81px;
+    /* margin-top: 81px; */
 
 }
 
 .donation {
-    height: 372px;
+    height: 370px;
     background: var(--color-light-l);
     display: flex;
     justify-content: center;
-    padding-top: 92px;
+    padding-top: 94px;
 }
 
 .donation>div>img {
@@ -291,16 +323,67 @@ p {
 .card_number {
     background: var(--color-primary);
     display: flex;
-    align-items: flex-start;
-    padding: 10px 15px 10px 15px;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
     border-radius: 9px;
     margin-top: -6px;
-    width:319px;
+    width: 319px;
+    height: 43px;
+}
+.card_number img {
+    margin-right: 14px;
+}
+.card_number h4 {
+    line-height: 0px;
 }
 
 
-
 .footer {
-    height: 355px;
+    height: 325px;
     background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    display: flex;
+    justify-content: center;
+    padding-top: 27px;
+}
+
+.footer>div {
+    margin-right: 83px;
+    margin-left: 78px;
+}
+
+.footer_img {
+    position: relative;
+    top: 13px;
+    left: 7px;
+
+}
+
+footer h3 {
+    color: var(--color-light-xl);
+}
+
+footer h4 {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer_questions h4 {
+    margin-top: 42px;
+}
+
+.footer_address h4 {
+    margin-top: -3px;
+    margin-bottom: 36px;
+    text-align: left;
+}
+
+footer h4 img {
+    margin-right: 20px;
 }
