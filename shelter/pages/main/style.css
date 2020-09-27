@@ -1,5 +1,9 @@
 :root {
     --color-primary: #F1CDB3;
+    --color-dark-xl: #4c4c4c;
+    --color-dark-l: #545454;
+    --color-dark-m: #B2B2B2;
+    --color-light-l: #f6f6f6;
 }
 
 @font-face {
@@ -33,6 +37,20 @@ h3 {
     line-height: 45px;
     letter-spacing: 0.06em;
     text-align: left;
+    color: var(--color-dark-l);
+}
+
+h5 {
+
+    font-family: Georgia;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: var(--color-dark-l);
+
 }
 
 p {
@@ -109,7 +127,6 @@ p {
     padding-top: 10px;
     padding-left: 5px;
 
-
 }
 
 .header_menu {
@@ -119,11 +136,9 @@ p {
 
 .header_menu>ul {
     display: flex;
-    /* justify-content: space-around; */
     list-style-type: none;
     padding-top: 60px;
     padding-left: 157px;
-
     font-family: Arial;
     font-size: 15px;
     font-style: normal;
@@ -131,7 +146,6 @@ p {
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
-
     color: #CDCDCD;
 }
 
@@ -186,7 +200,7 @@ p {
 }
 
 .about {
-    height: 588px;
+    height: 508px;
     display: flex;
     justify-content: center;
     padding-top: 80px;
@@ -194,15 +208,99 @@ p {
 }
 
 .about_text {
-    color: black;
+
     width: 430px;
     height: 380px;
-    margin-top: -22px;
+    margin-top: -21px;
     margin-left: 120px;
 }
-.about_text p{
-    color: black;
+
+.about_text p {
+    color: var(--color-dark-xl);
     margin-top: -10px;
     margin-bottom: 35px;
- 
+}
+
+.our_frends {
+    background: var(--color-light-l);
+    height: 877px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.our_frends h3 {
+    text-align: center;
+    margin-top: 81px;
+}
+
+.how_help {
+
+    display: flex;
+    justify-content: center;
+    height: 611px;
+}
+
+.how_help h3 {
+    text-align: center;
+    margin-top: 81px;
+
+}
+
+.donation {
+    height: 372px;
+    background: var(--color-light-l);
+    display: flex;
+    justify-content: center;
+    padding-top: 92px;
+}
+
+.donation>div>img {
+    position: relative;
+    right: 15px;
+    top: -2px;
+}
+
+.donation_text {
+    position: relative;
+    top: -47px;
+    left: 15px;
+}
+
+.donation_text h5 {
+    margin-top: -16px;
+}
+
+/* .donation_description {
+    width: 380px;
+} */
+
+.donation_description p {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--color-dark-m);
+    width: 380px;
+    margin-top: 21px;
+}
+
+.card_number {
+    background: var(--color-primary);
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 15px 10px 15px;
+    border-radius: 9px;
+    margin-top: -6px;
+    width:319px;
+}
+
+
+
+.footer {
+    height: 355px;
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
