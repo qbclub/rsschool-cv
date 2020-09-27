@@ -1,10 +1,13 @@
 :root {
     --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
     --color-dark-xl: #4c4c4c;
     --color-dark-l: #545454;
     --color-dark-m: #B2B2B2;
+    --color-dark-s: #CDCDCD;
     --color-light-l: #f6f6f6;
     --color-light-xl: #ffffff;
+    --color-light-s:#fafafa;
 }
 
 @font-face {
@@ -168,7 +171,16 @@ p {
 }
 
 .header_menu>ul>li:first-child {
-    border-bottom: #ffffff 2px solid;
+    border-bottom: var(--color-primary) 2px solid;
+}
+
+.header_menu>ul>li:active {
+    border-bottom: var(--color-primary) 2px solid;
+    color:var(--color-light-s)
+}
+
+.header_menu>ul>li:hover {
+      color:var(--color-light-s)
 }
 
 .not_only_content {
@@ -210,7 +222,36 @@ p {
     align-items: center;
     border-radius: 100px;
     background: var(--color-primary);
+    font-family: Georgia;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+.button:hover, .button_secondary:hover{
+    background:var(--color-primary-light);
+    border:none;
+}
 
+.button_secondary {
+
+    border: 2px solid var(--color-primary);
+    box-sizing: border-box;
+    border-radius: 100px;
+    height: 52px;
+    width:187px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-xl);
 }
 
 .about {
@@ -235,18 +276,78 @@ p {
     margin-bottom: 35px;
 }
 
-.our_frends {
+.our_friends {
     background: var(--color-light-l);
     height: 877px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
 
 }
 
-.our_frends h3 {
+.our_friends h3 {
     text-align: center;
     margin-top: 81px;
 }
+
+.for_pets_card {
+    width: 1200px;
+    height: 435px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+
+.our_friends .button {
+    width: 261px;
+}
+
+.pets_card {
+    width: 270px;
+    height: 435px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: center;
+    align-items: center;
+  margin-top: -3px;
+
+}
+.pets_card h4{
+    padding-top: 5px;
+}
+
+.pets_card_container {
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 53px; */
+    /* margin-left: 53px; */
+
+}
+
+.arrow {
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--color-primary);
+    box-sizing: border-box;
+    border-radius: 100px;
+    /* margin: 25px;   */
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow:active{
+    border: 2px solid var(--color-dark-s);
+    background:none;
+}
+
 
 .how_help {
     display: flex;
@@ -254,7 +355,7 @@ p {
     flex-direction: column;
     height: 564px;
     padding-top: 47px;
-    padding-left:2px;
+    padding-left: 2px;
 }
 
 .how_help_card_row1 {
@@ -263,17 +364,20 @@ p {
     display: flex;
     justify-content: space-around;
 }
+
 .how_help_card_row2 {
     width: 981px;
     padding-top: 27px;
     display: flex;
     justify-content: space-around;
 }
+
 .how_help_card {
-    text-align:center;
+    text-align: center;
 }
 
-.how_help h3, h4 {
+.how_help h3,
+h4 {
     text-align: center;
     /* margin-top: 81px; */
 
@@ -330,9 +434,11 @@ p {
     width: 319px;
     height: 43px;
 }
+
 .card_number img {
     margin-right: 14px;
 }
+
 .card_number h4 {
     line-height: 0px;
 }
