@@ -318,7 +318,7 @@ p {
 .pets_card {
     width: 270px;
     height: 435px;
-    background: #FAFAFA;
+    background: var(--color-light-s);
     border-radius: 9px;
     display: flex;
     flex-direction: column;
@@ -328,7 +328,7 @@ p {
     margin-top: -3px;
 }
 .pets_card:hover{
-    background: var(--color-light-s);
+    background: var(--color-light-xl);
 }
 
 .pets_card h4 {
