@@ -310,6 +310,7 @@ p {
     justify-content: space-between;
 }
 
+
 .our_friends .button {
     width: 261px;
 }
@@ -325,7 +326,9 @@ p {
     justify-content: center;
     align-items: center;
     margin-top: -3px;
-
+}
+.pets_card:hover{
+    background: var(--color-light-s);
 }
 
 .pets_card h4 {
