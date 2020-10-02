@@ -16,6 +16,7 @@ const result = document.getElementById('result');
 let newNumber = false;
 let firstValue = 0;
 let action = ''
+let nextAction = ''
 
 for (var i = 0; i < numbers.length; i++) {
   var number = numbers[i];
@@ -42,11 +43,11 @@ decimalBtn.addEventListener('click', decimal);
 
 exponentiationBtn.addEventListener('click', exponentiation);
 squareRootBtn.addEventListener('click', squareRoot);
-plus.addEventListener("click", summation);
-minus.addEventListener("click", subtraction);
-multiply.addEventListener("click", multiplication);
-divide.addEventListener("click", division);
-result.addEventListener("click", equally);
+plus.addEventListener('click', summation);
+minus.addEventListener('click', subtraction);
+multiply.addEventListener('click', multiplication);
+divide.addEventListener('click', division);
+result.addEventListener('click', equally);
 
 
 
@@ -67,21 +68,33 @@ function numberPress(number) {
 function equally() {
 
   newNumber = true;
-  if (action == "exp") {
-    return display.value = Math.pow(firstValue, display.value)
+  if (action == 'exp') {
+    display.value = Math.pow(firstValue, display.value)
   }
-  if (action == "plus") {
-    return display.value = Number(firstValue) + Number(display.value)
+  if (action == 'plus') {
+    display.value = Number(firstValue) + Number(display.value)
+
   }
-  if (action == "minus") {
-    return display.value = Number(firstValue) - Number(display.value)
+  if (action == 'minus') {
+    display.value = Number(firstValue) - Number(display.value)
+
   }
-  if (action == "multiply") {
-    return display.value = Number(firstValue) * Number(display.value)
+  if (action == 'multiply') {
+    display.value = Number(firstValue) * Number(display.value)
+
   }
-  if (action == "divide") {
-    return display.value = Number(firstValue) / Number(display.value)
+  if (action == 'divide') {
+    display.value = Number(firstValue) / Number(display.value)
+
   }
+  if (nextAction != '') {
+    action = nextAction;
+    nextAction = ''
+    firstValue = display.value
+  } else {
+    action = ''
+  }
+
 }
 
 function decimal() {
@@ -99,38 +112,57 @@ function decimal() {
 }
 
 function squareRoot() {
-  display.value >= 0 ? display.value = Math.sqrt(display.value) : display.value = "Нельзя"
+  display.value >= 0 ? display.value = Math.sqrt(display.value) : display.value = 'Ошибка'
   newNumber = true;
 }
 
 function exponentiation() {
   firstValue = display.value;
-  action = "exp";
+  action = 'exp';
   newNumber = true;
 }
 
 function summation() {
-  firstValue = display.value;
-  action = "plus";
-  newNumber = true;
+  if (!action == '') {
+    nextAction = 'plus';
+    equally()
+  } else {
+    firstValue = display.value;
+    action = 'plus';
+    newNumber = true;
+  }
+
 }
 
 function subtraction() {
-  firstValue = display.value;
-  action = "minus";
-  newNumber = true;
+  if (!action == '') {
+    nextAction = 'minus';
+    equally()
+  } else {
+    firstValue = display.value;
+    action = 'minus';
+    newNumber = true;
+  }
 }
 
 function multiplication() {
+  if (!action == '') {
+    nextAction = 'multiply';
+    equally()
+  } else {
   firstValue = display.value;
-  action = "multiply";
-  newNumber = true;
+  action = 'multiply';
+  newNumber = true;}
 }
 
 function division() {
+  if (!action == '') {
+    nextAction = 'divide';
+    equally()
+  } else {
   firstValue = display.value;
-  action = "divide";
-  newNumber = true;
+  action = 'divide';
+  newNumber = true;}
 }
 
 function clear(id) {
@@ -140,7 +172,7 @@ function clear(id) {
   } else if (id === 'c') {
     display.value = '0';
     newNumber = true;
-    action = "";
-    firstValue = "";
+    action = '';
+    firstValue = '';
   }
 }
