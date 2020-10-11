@@ -469,6 +469,7 @@ h4 {
 .footer>div {
     margin-right: 83px;
     margin-left: 78px;
+    overflow: hidden;
 }
 
 .footer_img {
