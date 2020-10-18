@@ -172,6 +172,11 @@ p {
     grid-area: m;
 }
 
+.header_menu img {
+    display: none;
+
+}
+
 ul {
     padding-inline-start: 40px;
 }
@@ -458,6 +463,8 @@ footer h4 img {
         width: 100%;
     }
 
+   
+
     .logo {
         margin-right: 0;
         margin-left: 30px;
@@ -509,10 +516,16 @@ footer h4 img {
 }
 
 @media (max-width: 767px) {
-    .header_menu {
+    .header_menu ul {
         display: none;
     }
 
+    .header_menu img {
+        display: block;
+    }
+    .header_logo {
+        margin-left: -20px;
+    }
     .header_container {
         height: 100%;
 
@@ -522,7 +535,7 @@ footer h4 img {
 
     }
 
- 
+
 
     .our_friends h3 {
         font-size: 25px;
@@ -539,13 +552,15 @@ footer h4 img {
         margin-top: -8px;
     }
 
-    .pets_card:nth-child(1){
+    .pets_card:nth-child(1) {
         order: -1;
     }
-    .pets_card:nth-child(3){
+
+    .pets_card:nth-child(3) {
         order: -1;
     }
-    .pets_card:nth-child(5){
+
+    .pets_card:nth-child(5) {
         order: -1;
     }
 
@@ -555,30 +570,37 @@ footer h4 img {
         display: none
     }
 
-    .paginator_button, .paginator_button_number {     
+    .paginator_button,
+    .paginator_button_number {
         margin-right: 5px;
-        margin-left: 5px;     
+        margin-left: 5px;
     }
+
     .paginator_container {
         margin-bottom: 50px;
     }
+
     .footer {
         height: 899px;
-        
+
     }
+
     .footer_img {
         top: 10px;
     }
-    .footer_container h3{
+
+    .footer_container h3 {
         text-align: center;
         margin-block-start: 30px;
         margin-block-end: 30px;
     }
-    .footer_container h4{
-        text-align: center;       
+
+    .footer_container h4 {
+        text-align: center;
     }
-    .footer_address h3{
+
+    .footer_address h3 {
         margin-block-start: 10px;
     }
-    
+
 }

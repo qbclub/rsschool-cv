@@ -21,8 +21,8 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: Georgia, Times, Times New Roman, serif;
-    
-  
+
+
 }
 
 a {
@@ -155,7 +155,12 @@ p {
 
 .header_menu {
     grid-area: m;
-    height: 180px;
+    height: 180px;  
+
+}
+
+.header_menu img {
+    display: none;
 
 }
 
@@ -300,6 +305,7 @@ p {
 
 }
 
+
 .our_friends h3 {
     text-align: center;
     margin-top: 81px;
@@ -373,27 +379,24 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 564px;
+    height: 562px;
     padding-top: 47px;
     padding-left: 2px;
 }
 
-.how_help_card_row1 {
+.how_help_card_row {
     width: 1147px;
-    padding-top: 23px;
+    padding-top: 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.how_help_card_row2 {
-    width: 981px;
-    padding-top: 27px;
-    display: flex;
-    justify-content: space-around;
-}
+
 
 .how_help_card {
     text-align: center;
+    margin: 20px 50px 0 50px;
 }
 
 .how_help h3,
@@ -480,7 +483,7 @@ h4 {
 
 .footer_img {
     position: relative;
-    top: 13px;
+    top: 10px;
     left: 7px;
 
 }
@@ -517,7 +520,7 @@ footer h4 img {
 
 @media (max-width: 1280px) {
     .wraper {
-        width: 100%;
+        width: 100vw;
     }
 
     .header_logo {
@@ -599,13 +602,14 @@ footer h4 img {
         left: 142px;
 
     }
-    
+
     .about {
         height: fit-content;
         padding-bottom: 95px;
-   
-    
+
+
     }
+
     .about_content:nth-child(2) {
         display: flex;
         justify-content: center;
@@ -614,33 +618,397 @@ footer h4 img {
         width: 100%;
         order: -1;
     }
+
     .about_content:nth-child(1) {
-       
-      
+
+
         margin-top: 115px;
         margin-left: 15px;
- 
-     
+
+
     }
+
     .about_text {
         width: 430px;
         height: 380px;
         margin-top: 0px;
         margin-left: 0px;
     }
+
     .for_pets_card {
-        width: 100%;
-      
+        width: 100vw;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+
     }
-    .pets_card:last-child{
+
+    .arrow {
+        margin: 25px;
+    }
+
+    .pets_card_container {
+        width: auto;
+        justify-content: space-between;
+
+    }
+
+    .pets_card:last-child {
         display: none;
     }
 
-    /* .about:nth-child(5){
-        order: -1;
-    } */
+    .how_help {
+        height: auto;
+    }
+
+    .how_help h3 {
+        margin-bottom: 0px;
+    }
+
+    .how_help_card_row {
+        width: auto;
+        justify-content: space-evenly;
+        padding-top: 0px;
+        padding-bottom: 67px;
+    }
+
+    .how_help_card {
+        margin: 40px 40px 0px 40px;
+
+    }
+
+    .donation {
+        width: 100vw;
+        height: auto;
+        flex-wrap: wrap;
+        padding-bottom: 96px;
+    }
+
+    .donation>div:first-child {
+        order: 1;
+    }
+
+    .donation_text {
+        left: 0px;
+    }
+
+    .donation>div>img {
+        right: 0px;
+    }
+
+    .footer {
+        height: 639px;
+        padding-top: 0;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
     .footer_container {
+
+        width: 100%;
+        justify-content: space-around;
+
+
+    }
+
+    .footer_img {
+        top: 12px;
+    }
+
+    .footer>div {
+        margin: 0;
+        overflow: inherit;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        grid-template-areas:
+            "l l l l m m"
+            "no no no no no no"
+            "i i i i i i"
+            "i i i i i i"
+            "i i i i i i"
+    }
+
+    .logo {
+        margin-left: 10px;
+        padding-top: 30px;
+        height: auto;
+    }
+
+
+
+   
+
+    .header_menu>ul {
+        display: none;
+    }
+
+    .header_menu img {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 53px;
+    }
+
+    .not_only {
+
         width: 100%;
     }
+
+    .not_only_content {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-top: 14px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .not_only_content .button {
+        margin-left: 0px;
+    }
+
+    .not_only_content h2 {
+        text-align: center;
+        width: 100%;
+
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.06em;
+        text-align: center;
+
+    }
+
+    .not_only_content p {
+        text-align: center;
+        width: 91%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-top: 18px;
+    }
+
+    .not_only_content br {
+        display: none;
+    }
+
+    .header_image {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding-top: 104px;
+        padding-left: 20px;
+    }
+
+
+    .header_image img {
+        /* width: 100%; */
+        position: static;
+        width: 260px;
+        height: 272px;
+    }
+
+    .about {
+
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .about_text h3 br {
+        display: none;
+    }
+
+    .about_text p {
+        color: var(--color-dark-xl);
+        margin-top: 0px;
+        margin-bottom: 24px;
+        padding: 0 21px 0 21px;
+
+
+        letter-spacing: 0.6px;
+    }
+
+    .about_content img {
+        width: 260px;
+        height: 353.6px;
+    }
+
+    .about_content:nth-child(1) {
+        margin-top: 181px;
+        margin-left: 0px;
+    }
+
+    h3 {
+
+        font-family: Georgia;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.06em;
+        text-align: center;
+
+    }
+
+    .our_friends {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .our_friends h3 {
+
+        margin-top: 42px;
+    }
+
+    .for_pets_card {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 106px;
+    }
+
+    .pets_card_container {
+        margin-top: -21px;
+        order: -1;
+    }
+
+    .arrow {
+        margin: 35px 40px 0px 40px;
+    }
+
+    .pets_card:nth-child(1) {
+        order: -1;
+    }
+
+    .pets_card:nth-child(3),
+    .pets_card:nth-child(5),
+    .pets_card:nth-child(2),
+    .pets_card:nth-child(4),
+    .pets_card:nth-child(6) {
+        display: none
+    }
+
+    .how_help {
+        padding-top: 18px;
+    }
+
+    .how_help h4 {
+
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+
+    .how_help_card {
+        margin: 0px 20px 0px 37px;
+    }
+
+    .how_help_card_row {
+        justify-content: space-between;
+        padding-top: 42px;
+        padding-bottom: 43px;
+    }
+
+    .how_help img {
+        /* width: 50px; */
+        height: 50px;
+    }
+
+    .donation {
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 36px;
+    }
+
+    .card_number {
+        width: 280px;
+        box-sizing: border-box;
+    }
+
+    .card_number h4 {
+        font-size: 15px;
+        line-height: 17px;
+
+    }
+
+    .donation br {
+        display: none;
+    }
+
+    .donation_text {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding-bottom: 35px;
+
+    }
+
+    .donation_text h5 {
+        letter-spacing: 0;
+        padding-top: 15px;
+    }
+
+    .donation_description p {
+        width: 280px;
+    }
+
+    .donation [alt="puppy"] {
+        width: 260px;
+    }
+
+    .footer {
+        height: auto;
+
+    }
+
+    .footer h3 {
+
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+
+    .footer_img {
+        position: static;
+
+
+    }
+
+    .footer [alt="puppy"] {
+        width: 260px;
+    }
+
+    .footer_container h3 {
+        text-align: center;
+        margin-block-start: 30px;
+        margin-block-end: 30px;
+    }
+
+    .footer_container h4 {
+        text-align: center;
+    }
+
+    .footer_address h3 {
+        margin-block-start: 10px;
+    }
+
+    .footer_address {
+        padding-bottom: 57px;
+    }
+
+
 }
